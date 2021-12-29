@@ -1,8 +1,20 @@
 
-
+{% comment %} 
 {% for record in response%}
    <b>Roll No :</b> <span>{{ record.roll }}</span> <br><br>
    <b>Name :</b> <span>{{ record.name }}</span><br><br>
    <b>City :</b> <span>{{ record.city }}</span><br><br>
    <p>---------------------------------------------------</p>
+{% endfor %}     {% endcomment %}
+
+
+
+
+{% for record in response%}
+   <b>Fromdate :</b> <span>{{ record.fromdate }}</span> <br><br>
+   <b>Todate :</b> <span>{{ record.todate }}</span><br><br>
+   <b>Noofguest :</b> <span>{{ record.noofguest }}</span><br><br>
+   <b>Typeofacc :</b> <span>{{ record.typeofacc }}</span><br><br>
+   <p>---------------------------------------------------</p>
 {% endfor %}    
+
